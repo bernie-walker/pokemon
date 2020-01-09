@@ -6,7 +6,6 @@ body {
   padding: 8px;
   width: 35%;
   height: auto;
-  box-sizing: border-box;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -30,39 +29,37 @@ body {
   flex-wrap: wrap;
   padding: 2px;
   justify-content: space-around;
-  width: 27%;
-  height: 400px;
+  width: 23%;
   border: 2px solid rgba(140, 140, 140, 0.5);
-  margin-bottom: 27px;
+  margin-bottom: 21px;
   border-radius: 50px;
   outline: none;
-  box-shadow: 1px 1px 5px 1px;
   background-image: linear-gradient(
     to top left,
     rgba(0, 0, 0, 0.4),
     rgba(233, 233, 233, 0.6)
   );
+  box-shadow: 1px 1px 5px 1px;
 }
 
 .poke-card:hover {
+  box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.6);
   background-image: linear-gradient(
     to top left,
     rgba(0, 0, 0, 0.4),
     rgba(100, 100, 100, 0.6) 30%,
     rgba(233, 233, 233, 0.6)
   );
-  box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.6);
 }
 
 .poke-name {
   color: rgba(0, 0, 0, 0.5);
-
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
   font-weight: 600;
-  font-size: 2.75vw;
+  font-size: 2.4vw;
   letter-spacing: 1px;
   width: 90%;
-  margin: auto;
+  margin: 6px auto;
   padding: 3px;
   box-sizing: border-box;
 }
@@ -88,7 +85,7 @@ body {
 }
 
 .poke-abilities > p {
-  font-size: 22px;
+  font-size: 1.7vw;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.5);
@@ -105,5 +102,17 @@ body {
 }
 
 .poke-abilities > p.fire {
-  color: hsla(12, 88%, 37%, 0.705);
+  color: hsla(9, 84%, 41%, 0.76);
+}
+
+.poke-abilities > p.water {
+  color: hsla(219, 87%, 37%, 0.562);
+}
+
+.poke-abilities > p.flying {
+  color: hsla(291, 74%, 53%, 0.657);
+}
+
+.poke-abilities > p.bug {
+  color: hsla(69, 77%, 29%, 0.883);
 }
