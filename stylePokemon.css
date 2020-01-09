@@ -28,6 +28,7 @@ body {
 .poke-card {
   display: flex;
   flex-wrap: wrap;
+  padding: 2px;
   justify-content: space-around;
   width: 30%;
   height: 400px;
@@ -54,10 +55,10 @@ body {
 }
 
 .poke-name {
-  color: rgba(0, 0, 0, 0.493);
+  color: rgba(0, 0, 0, 0.6);
   font-family: Georgia, 'Times New Roman', Times, sans-serif;
   font-weight: bolder;
-  font-size: 34px;
+  font-size: 2.75vw;
   letter-spacing: 1px;
   width: 90%;
   margin: auto;
@@ -66,10 +67,9 @@ body {
 }
 
 .poke-image {
-  /* border: 1px solid; */
   padding: 2px;
   margin: auto;
-  width: 90%;
+  width: 80%;
   height: auto;
   margin-top: 4px;
   margin-bottom: 4px;
@@ -77,11 +77,28 @@ body {
 }
 
 .poke-abilities {
-  font-size: 20px;
-  /* border: 1px solid; */
   width: 90%;
   height: 50px;
   margin: auto;
-  padding: 2px;
+  padding: 1px;
   box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.poke-abilities > p {
+  font-size: 22px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  margin: auto;
+  font-variant: small-caps;
+}
+
+.poke-abilities > p.poison {
+  color: hsla(240, 54%, 52%, 0.89);
+}
+
+.poke-abilities > p.grass {
+  color: hsla(120, 82%, 26%, 0.63);
 }
