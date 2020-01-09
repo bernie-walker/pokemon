@@ -1,8 +1,12 @@
 .main-title {
-  text-align: center;
-  width: 90%;
-  border: 1px solid;
+  padding: 8px;
+  width: 35%;
+  height: auto;
+  box-sizing: border-box;
   margin: auto;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 .container {
