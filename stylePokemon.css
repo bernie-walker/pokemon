@@ -35,6 +35,16 @@
   );
 }
 
+.poke-card:hover {
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.4),
+    rgba(100, 100, 100, 0.6) 30%,
+    rgba(233, 233, 233, 0.6)
+  );
+  box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.6);
+}
+
 .poke-name {
   font-family: sans-serif;
   letter-spacing: 1px;
