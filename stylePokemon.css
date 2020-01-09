@@ -1,3 +1,7 @@
+body {
+  background: rgba(120, 120, 120, 0.2);
+}
+
 .main-title {
   padding: 8px;
   width: 35%;
@@ -27,7 +31,7 @@
   justify-content: space-around;
   width: 30%;
   height: 400px;
-  border: 2px solid rgba(120, 120, 120, 0.5);
+  border: 2px solid rgba(140, 140, 140, 0.5);
   margin-bottom: 27px;
   border-radius: 50px;
   outline: none;
@@ -50,13 +54,14 @@
 }
 
 .poke-name {
-  font-family: sans-serif;
+  color: rgba(0, 0, 0, 0.493);
+  font-family: Georgia, 'Times New Roman', Times, sans-serif;
+  font-weight: bolder;
+  font-size: 34px;
   letter-spacing: 1px;
-  /* border: 1px solid; */
   width: 90%;
   margin: auto;
   padding: 3px;
-  font-size: 25px;
   box-sizing: border-box;
 }
 
