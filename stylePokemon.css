@@ -55,9 +55,10 @@ body {
 }
 
 .poke-name {
-  color: rgba(0, 0, 0, 0.6);
-  font-family: Georgia, 'Times New Roman', Times, sans-serif;
-  font-weight: bolder;
+  color: rgba(0, 0, 0, 0.5);
+
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+  font-weight: 600;
   font-size: 2.75vw;
   letter-spacing: 1px;
   width: 90%;
@@ -96,9 +97,13 @@ body {
 }
 
 .poke-abilities > p.poison {
-  color: hsla(240, 54%, 52%, 0.89);
+  color: hsla(266, 54%, 48%, 0.89);
 }
 
 .poke-abilities > p.grass {
   color: hsla(120, 82%, 26%, 0.63);
+}
+
+.poke-abilities > p.fire {
+  color: hsla(12, 88%, 37%, 0.705);
 }
