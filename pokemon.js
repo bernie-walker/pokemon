@@ -307,18 +307,19 @@ let x;
 
 const popInfo = function(context) {
   const info = document.body.children[0];
-  x = context;
+  const imgTag = document.createElement('img');
+  imgTag.src = context.children[1].attributes.src.value;
+
   info.children[0].innerText = context.children[0].innerText;
-  info.children[1].setAttribute(
-    'src',
-    context.children[1].attributes.src.value
-  );
+  info.children[1].appendChild(imgTag);
   info.children[2].innerText = descriptionLookup[context.children[0].innerText];
   info.setAttribute('style', 'display: block');
 };
 
 const handleKeyDown = function(context) {
   if (context.key == 'Escape') {
+    const image = document.getElementsByClassName('info-image');
+    image[0].removeChild(image[0].children[0]);
     document.body.children[0].setAttribute('style', 'display: none');
   }
 };

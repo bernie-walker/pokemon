@@ -32,7 +32,7 @@ body {
   width: 23%;
   border: 2px solid rgba(140, 140, 140, 0.5);
   margin-bottom: 21px;
-  border-radius: 50px;
+  border-radius: 15%;
   outline: none;
   background-image: linear-gradient(
     to top left,
@@ -124,7 +124,6 @@ body {
   position: fixed;
   left: 15%;
   top: 8%;
-  border: 2px solid;
   border-radius: 7%;
   width: 70%;
   height: 85%;
@@ -134,21 +133,32 @@ body {
 
 .name {
   color: aliceblue;
-  margin: 2% 0% 1% 38.7%;
   font-size: 3.4vw;
+  width: 40%;
+  margin: auto;
+  text-align: center;
 }
 
-.image {
-  margin-left: 34%;
+.info-image {
+  margin: 3px auto;
   height: 50%;
-  width: auto;
+  width: 40%;
+  padding: 3px;
+  text-align: center;
+}
+
+.info-image > img {
+  height: auto;
+  width: 75%;
 }
 
 .content {
   font-family: sans-serif;
+  padding: 3px;
   width: 70%;
+  margin: auto;
+  text-align: justify;
   color: rgba(240, 248, 255, 0.8);
-  margin: 5% 0% 0% 15%;
   line-height: 1.5;
   letter-spacing: 1.5px;
 }
