@@ -116,3 +116,36 @@ body {
 .poke-abilities > p.bug {
   color: hsla(69, 77%, 29%, 0.883);
 }
+
+.info-panel {
+  /* display: none; */
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  left: 15%;
+  top: 8%;
+  border: 2px solid;
+  border-radius: 7%;
+  width: 70%;
+  height: 85%;
+  margin: 1px;
+  padding: 3px;
+}
+
+.name {
+  color: aliceblue;
+  margin: 2% 0% 1% 38.7%;
+  font-size: 3.4vw;
+}
+
+.image {
+  margin-left: 34%;
+  height: 50%;
+  width: auto;
+}
+
+.content {
+  width: 70%;
+  color: aliceblue;
+  /* justify-content: center; */
+  margin: 5% 0% 0% 15%;
+}
