@@ -118,7 +118,8 @@ body {
 }
 
 .info-panel {
-  /* display: none; */
+  overflow: scroll;
+  display: none;
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   left: 15%;
@@ -144,8 +145,10 @@ body {
 }
 
 .content {
+  font-family: sans-serif;
   width: 70%;
-  color: aliceblue;
-  /* justify-content: center; */
+  color: rgba(240, 248, 255, 0.8);
   margin: 5% 0% 0% 15%;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
 }
