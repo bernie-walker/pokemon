@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 98%;
   padding: 4px;
   padding-top: 26px;
   margin: auto;
@@ -29,7 +29,7 @@ body {
   flex-wrap: wrap;
   padding: 2px;
   justify-content: space-around;
-  width: 23%;
+  width: 23.5%;
   border: 2px solid rgba(140, 140, 140, 0.5);
   margin-bottom: 21px;
   border-radius: 8%;
