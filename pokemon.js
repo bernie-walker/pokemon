@@ -303,23 +303,18 @@ const descriptionLookup = {
     'Mew is said to possess the genetic composition of all Pokémon. It is capable of making itself invisible at will, so it entirely avoids notice even if it approaches people.  Mew is said to possess the genetic composition of all Pokémon. It is capable of making itself invisible at will, so it entirely avoids notice even if it approaches people.'
 };
 
-let x;
-
 const popInfo = function(context) {
   const info = document.body.children[0];
-  const imgTag = document.createElement('img');
-  imgTag.src = context.children[1].attributes.src.value;
+  const imgTag = info.children[1].children[0];
 
+  imgTag.setAttribute('src', context.children[1].src);
   info.children[0].innerText = context.children[0].innerText;
-  info.children[1].appendChild(imgTag);
   info.children[2].innerText = descriptionLookup[context.children[0].innerText];
   info.setAttribute('style', 'display: block');
 };
 
 const handleKeyDown = function(context) {
   if (context.key == 'Escape') {
-    const image = document.getElementsByClassName('info-image');
-    image[0].removeChild(image[0].children[0]);
     document.body.children[0].setAttribute('style', 'display: none');
   }
 };
