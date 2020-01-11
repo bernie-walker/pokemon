@@ -162,3 +162,10 @@ body {
   line-height: 1.5;
   letter-spacing: 1.5px;
 }
+
+.close-button {
+  outline: none;
+  position: fixed;
+  left: 77%;
+  top: 10%;
+}

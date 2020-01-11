@@ -305,16 +305,14 @@ const descriptionLookup = {
 
 const popInfo = function(context) {
   const info = document.body.children[0];
-  const imgTag = info.children[1].children[0];
+  const imgTag = info.children[2].children[0];
 
   imgTag.setAttribute('src', context.children[1].src);
-  info.children[0].innerText = context.children[0].innerText;
-  info.children[2].innerText = descriptionLookup[context.children[0].innerText];
+  info.children[1].innerText = context.children[0].innerText;
+  info.children[3].innerText = descriptionLookup[context.children[0].innerText];
   info.setAttribute('style', 'display: block');
 };
 
-const handleKeyDown = function(context) {
-  if (context.key == 'Escape') {
-    document.body.children[0].setAttribute('style', 'display: none');
-  }
+const closeInfo = function() {
+  document.body.children[0].setAttribute('style', 'display: none');
 };
